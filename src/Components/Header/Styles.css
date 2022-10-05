@@ -1,0 +1,42 @@
+#header {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+  position: fixed;
+}
+#header button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn-menu-container {
+  width: 20%;
+  padding: 10px;
+  float: left;
+}
+
+.header-icons {
+  width: 80%;
+  display: flex;
+}
+.logo-header {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.icons-header {
+  width: 20%;
+
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-icons h2 {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}

@@ -1,0 +1,5 @@
+.box-center {
+  display: flex;
+  background-color: grey;
+  height: 100vh;
+}

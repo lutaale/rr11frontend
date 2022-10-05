@@ -1,0 +1,718 @@
+.container-home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    align-items: center;
+}
+
+.container-home .header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    transition: 0.3s ease;
+    overflow: hidden;
+    align-items: center;
+    z-index: 10;
+}
+
+.header.animationheader {
+    animation: showheader 1s;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    height: 70px;
+    z-index: 10;
+}
+
+@keyframes showheader {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 70px;
+    }
+}
+
+#btnarea {
+    display: none;
+    height: fit-content;
+}
+
+#btnarea button,
+.minhaconta {
+    color: white;
+    height: 40px;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: transparent;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#btnarea button:hover,
+.minhaconta:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    height: 40px;
+    width: 243px;
+    float: right;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.logo-home {
+    height: fit-content;
+}
+
+.redes-sociais {
+    margin-left: 20px;
+    height: fit-content;
+    background-color: transparent;
+}
+
+.redes-sociais button {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+}
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#main-menu {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.897);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 11;
+    gap: 10px;
+}
+
+.btnmenu {
+    outline: none;
+    border: 0;
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    height: 40px;
+    width: 200px;
+}
+
+.btnmenu:hover {
+    border: 1px solid grey;
+}
+
+.section2 {
+    width: 100%;
+    height: 650px;
+}
+
+.pecas-populares {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    scroll-behavior: auto;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: end;
+    scrollbar-width: none;
+}
+
+.pecas-populares button {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    transition: 0.3s ease;
+    border-radius: 50%;
+}
+
+.pecas-populares button:hover {
+    background-color: rgba(255, 255, 255, 0.696);
+}
+
+#btnright {
+    position: absolute;
+    right: 0;
+}
+
+#btnleft {
+    position: absolute;
+    left: 0;
+}
+
+.box-item {
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-item button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid grey;
+    color: white;
+    border-radius: 0;
+
+}
+
+.box-item img {
+    width: 300px;
+    height: 360px;
+}
+
+.box-item strong {
+    height: 35px;
+}
+
+.box-item p {
+    color: white;
+    text-align: start;
+    height: 35px;
+    font-size: 20px;
+}
+
+@media(max-width:500px) {
+    .pecas-populares {
+        display: grid;
+    }
+
+    .box-item {
+        width: 100%;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+}
+
+.categoryArea {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 5rem;
+}
+
+.title-category {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.title-category h2 {
+    margin-left: 20px;
+}
+
+.category-area-btn {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.category-area-btn span {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 200;
+}
+
+.category-area-btn span::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: red;
+    display: block;
+}
+
+.category-btns {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-btns button,
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    margin-left: 10px;
+    background-color: transparent;
+}
+
+.btnitensmenu {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: red;
+    margin-left: 20px;
+}
+
+
+.title-category h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.title-category h2::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: red;
+    display: block;
+    margin-top: 3px;
+}
+
+.box-category {
+    width: 400px;
+    height: 500px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 3px 3px 3px black;
+}
+
+#box1 {
+    width: 400px;
+    height: 500px;
+    background-image: url('../../img/Sutiancategoria.webp');
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.7s ease;
+    filter: opacity(0.4) drop-shadow(0 0 0 grey);
+}
+
+#box1:hover {
+    filter: none;
+}
+
+
+#box2 {
+    background-image: url('https://calvinklein.vtexassets.com/arquivos/ids/602106/mas1828_0900_1.jpg?v=637933396355130000');
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.7s ease;
+    filter: opacity(0.4) drop-shadow(0 0 0 grey);
+}
+
+#box2:hover {
+    filter: none;
+}
+
+#box3 {
+    background-image: url('https://img.freepik.com/fotos-gratis/jovem-mulher-sexy-em-lingerie-preta-posando-na-cama_273443-2460.jpg?w=996&t=st=1664810516~exp=1664811116~hmac=c26be1061ff643e469854af4229bfcab81315c60b31d8f4bf02244d9aceb656e');
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    transition: 0.7s ease;
+    filter: opacity(0.4) drop-shadow(0 0 0 grey);
+}
+
+#box3:hover {
+    filter: none;
+}
+
+#box4 {
+    background-image: url('../../img/maxsport-roupas-masculinas-fitness.webp');
+    object-fit: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    transition: 0.7s ease;
+    filter: opacity(0.4) drop-shadow(0 0 0 grey);
+}
+
+#box4:hover {
+    filter: none;
+}
+
+#box4 img {
+    width: 350px;
+}
+
+.text-area {
+    width: 100%;
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+
+.banner1 {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://img.freepik.com/fotos-gratis/o-atleta-masculino-treinando-forte-na-academia_155003-38259.jpg?w=996&t=st=1664804112~exp=1664804712~hmac=ef3f18c9b4815daa72efe274d86137dc1694aec813020e1a7df4e57a85edb85a');
+    object-fit: cover;
+    background-size: cover;
+    transition: 2s ease;
+}
+
+.banner1 img {
+    width: 350px;
+    transform: scale(1.3);
+    margin-bottom: 20px;
+}
+
+.banner1:hover {
+    transform: scale(0.95);
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+.banner2 {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://img.freepik.com/fotos-gratis/mulher-bonita-vestindo-jaqueta-de-couro-preta-e-lingerie-preta-sexy_144627-23619.jpg?w=996&t=st=1664804014~exp=1664804614~hmac=b786593241b5bac3c1a7a45b032cc61862b1726c52829cf617f52e0b42eec22d');
+    object-fit: cover;
+    background-size: cover;
+    transition: 2s ease;
+}
+
+.banner2 img {
+    background-color: rgba(0, 0, 0, 0.73);
+    margin-left: 100px;
+    transform: scale(1.3);
+    border-radius: 20px 20px 20px 0px;
+    margin-bottom: 20px;
+}
+
+.banner2:hover {
+    transform: scale(0.95);
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+.banner1 button,
+.banner2 button {
+    width: 150px;
+    height: 40px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.banner1 button:hover,
+.banner2 button:hover {
+    transform: scale(1.2);
+}
+
+.section4 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.imagem {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-sobrenos {
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-email-area {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.nome-title {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nome-title span {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.nome-title p {
+    color: grey;
+}
+
+.nome-title p::after {
+    content: '';
+    width: 35px;
+    height: 2px;
+    background-color: grey;
+    display: block;
+}
+
+.input-send-email {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-send-email input {
+    width: 50%;
+    background-color: white;
+    border: 0;
+    border-radius: 0;
+    color: black;
+    font-size: 17px;
+}
+
+.input-send-email button {
+    height: 50px;
+    width: 100px;
+    border: 0;
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.input-send-email button:hover {
+    animation: pulse 1s ease-in infinite;
+}
+
+@keyframes pulse {
+    0% {
+        width: 100px;
+        height: 50px;
+    }
+
+    50% {
+        width: 105px;
+        height: 55px;
+    }
+
+    100% {
+        width: 100px;
+        height: 50px;
+    }
+}
+
+.information-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.btn-footer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-footer span {
+    color: grey;
+    font-size: 25px;
+}
+
+.btn-footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.btn-footer a:hover {
+    text-decoration: underline red;
+}
+
+.img-footer-info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#imglogo {
+    width: 240px;
+}
+
+.img-footer-info p {
+    width: 400px;
+    color: grey;
+    margin-top: 2rem;
+}
+
+footer #linha {
+    width: 80%;
+    height: 1px;
+    background-color: grey;
+    margin-top: 5px;
+}
+
+footer p {
+    color: grey;
+}
+
+.modalCarrinhoHome {
+    width: 600px;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    animation: showcart 1s;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.valortotal {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 2rem;
+    background-color: #000;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.modaldetailsHome {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-bottom: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    z-index: 102;
+    transform: scale(0.83);
+}
+
+#desfoca-fundo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.795);
+    position: fixed;
+    z-index: 9;
+}
+
+.modaldetailsHome span {
+    font-weight: 500;
+}
+
+.modaldetailsHome #descricao {
+    text-align: center;
+    color: grey;
+    font-weight: 300;
+}
+
+.modaldetailsHome strong {
+    color: black;
+}
+
+#btnclosedetailshome {
+    border: 0;
+    background-color: transparent;
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}

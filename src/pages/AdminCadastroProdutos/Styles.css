@@ -1,0 +1,43 @@
+.input-number {
+  display: flex;
+}
+
+.input-number input {
+  width: 34%;
+}
+
+.input-categoria {
+  display: flex;
+}
+
+.input-categoria input {
+  width: 34%;
+}
+#description {
+  height: 200px;
+}
+#form-create {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+#form-create #submit {
+  margin-left: 1%;
+}
+
+.create-products h1 {
+  color: white !important;
+  margin: 20px;
+  margin-top: 0;
+}
+#form-create #description {
+  width: 70%;
+  height: 150px;
+}
+
+.create-products {
+  margin-left: 20%;
+  margin-top: 50px;
+  width: 100%;
+}

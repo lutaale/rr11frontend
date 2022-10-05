@@ -1,0 +1,47 @@
+.img-system {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 428px) {
+  .img-system {
+    display: none;
+  }
+
+  .login-form {
+    width: 100% !important;
+  }
+  .login {
+    width: 100%;
+  }
+}
+
+.login {
+  display: flex;
+  color: white;
+  background-color: black;
+  height: 100vh;
+}
+.login-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form form strong a {
+  color: white;
+}

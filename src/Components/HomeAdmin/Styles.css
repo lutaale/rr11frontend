@@ -1,0 +1,27 @@
+#box-home {
+  width: 100%;
+  background-color: white;
+  height: 280px;
+  /* -webkit-box-shadow: 0px 0px 5px 2px rgb(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px 2px rgb(255, 255, 255, 0.5); */
+  margin: 8%;
+  margin-left: 1%;
+  border-radius: 5px;
+  margin-top: 4%;
+  margin-bottom: 0%;
+}
+.admin-dash h1 {
+  margin: 4%;
+
+  color: white;
+}
+#box-data-ajust {
+  display: flex;
+  width: 98%;
+}
+
+.admin-dash {
+  width: 98%;
+  margin-bottom: 50px;
+  margin-left: 0%;
+}
